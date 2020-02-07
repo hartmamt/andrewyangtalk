@@ -5,20 +5,27 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div
+      className="video"
+      style={{
+        position: "relative",
+        paddingBottom: "56.25%" /* 16:9 */,
+        paddingTop: 25,
+        height: 0
+      }}
+    >
+      <iframe
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%"
+        }}
+        src={`https://www.youtube.com/embed/xGdKJvBx7Uk`}
+        frameBorder="0"
+      />
+    </div>
     </div>
   );
 }
